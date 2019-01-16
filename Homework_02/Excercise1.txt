@@ -1,0 +1,5 @@
+1. It is better to use setmmediate sometimes when we want to execute the function right after all I/O events. Although setTimeout(,0) can esentially be simmilar to setImmediate, it still has to check whether there are any other function in the timer queue before executing. 
+
+2. process.nextTick is a high priroritized queue which is outside of the event loop called micro task which will certainly run before setImmediate whih is located in the check queue of the event loop.
+
+3. http, url, queryString, path, fs, util, path, events, net, buffer
