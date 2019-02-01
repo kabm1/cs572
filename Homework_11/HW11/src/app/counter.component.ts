@@ -17,7 +17,7 @@ export class CounterComponent implements OnInit {
   @Output() counterChange = new EventEmitter();
   
     constructor(){
-      this.counter = 0 ;
+     // this.counter = 0 ;
        }  
     
   counterIncrease(){
